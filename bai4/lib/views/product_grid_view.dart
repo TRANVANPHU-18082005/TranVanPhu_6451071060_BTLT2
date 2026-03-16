@@ -3,20 +3,17 @@ import '../utils/app_data.dart';
 import '../widget/product_item.dart';
 
 class ProductGridView extends StatelessWidget {
-  const ProductGridView({Key? key}) : super(key: key);
+  const ProductGridView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Nguyễn Công Vũ - 6451071089'),
+        title: const Text('TRẦN VĂN PHÚ - 6451071060'),
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
         leading: const Icon(Icons.arrow_back),
-        actions: const [
-          Icon(Icons.search),
-          SizedBox(width: 16),
-        ],
+        actions: const [Icon(Icons.search), SizedBox(width: 16)],
       ),
       body: Container(
         color: Colors.grey[100],

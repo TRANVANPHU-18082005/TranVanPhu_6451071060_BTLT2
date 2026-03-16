@@ -1,10 +1,10 @@
-// NGUYỄN CÔNG VŨ - 6451071089
+// TRẦN VĂN PHÚ - 6451071060
 import 'package:flutter/material.dart';
 import '../utils/mock_data.dart';
 import '../widget/food_card.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
             color: Colors.white,
             alignment: Alignment.center,
             child: const Text(
-              'NGUYỄN CÔNG VŨ - 6451071089',
+              'TRẦN VĂN PHÚ - 6451071060',
               style: TextStyle(
                 fontSize: 16.0,
                 fontWeight: FontWeight.bold,

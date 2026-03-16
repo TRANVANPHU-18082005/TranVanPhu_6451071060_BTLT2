@@ -4,7 +4,7 @@ import '../models/product.dart';
 class ProductItem extends StatelessWidget {
   final Product product;
 
-  const ProductItem({Key? key, required this.product}) : super(key: key);
+  const ProductItem({super.key, required this.product});
 
   String _formatCurrency(double price) {
     String priceStr = price.toInt().toString();
@@ -14,7 +14,7 @@ class ProductItem extends StatelessWidget {
       result = priceStr[i] + result;
       count++;
       if (count == 3 && i != 0) {
-        result = ',' + result;
+        result = ',$result';
         count = 0;
       }
     }
@@ -51,7 +51,11 @@ class ProductItem extends StatelessWidget {
                     fit: BoxFit.cover,
                     errorBuilder: (context, error, stackTrace) {
                       return const Center(
-                        child: Icon(Icons.shopping_bag, size: 50, color: Colors.grey),
+                        child: Icon(
+                          Icons.shopping_bag,
+                          size: 50,
+                          color: Colors.grey,
+                        ),
                       );
                     },
                   ),
@@ -85,7 +89,11 @@ class ProductItem extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            const Icon(Icons.star, color: Colors.orange, size: 14),
+                            const Icon(
+                              Icons.star,
+                              color: Colors.orange,
+                              size: 14,
+                            ),
                             Text(
                               '${product.rating}/5',
                               style: const TextStyle(

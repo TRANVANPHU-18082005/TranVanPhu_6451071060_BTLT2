@@ -1,9 +1,9 @@
-// NGUYỄN CÔNG VŨ - 6451071089
+// TRẦN VĂN PHÚ - 6451071060,
 import 'package:flutter/material.dart';
 import '../views/home_page.dart';
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {

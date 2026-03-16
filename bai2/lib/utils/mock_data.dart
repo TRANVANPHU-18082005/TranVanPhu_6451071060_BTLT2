@@ -1,4 +1,4 @@
-// NGUYỄN CÔNG VŨ - 6451071089
+// TRẦN VĂN PHÚ - 6451071060
 import '../models/food.dart';
 
 List<Food> mockFoods = [
@@ -6,13 +6,13 @@ List<Food> mockFoods = [
     name: 'Phở Bò',
     description: 'Phở Bò Đặc Biệt',
     price: '65,000 VNĐ',
-    imageUrl: 'https://picsum.photos/seed/pho/200', 
+    imageUrl: 'https://picsum.photos/seed/pho/200',
   ),
   Food(
     name: 'Bún Chả',
     description: 'Bún Chả Hà Nội',
     price: '55,000 VNĐ',
-    imageUrl: 'https://picsum.photos/seed/buncha/200', 
+    imageUrl: 'https://picsum.photos/seed/buncha/200',
   ),
   Food(
     name: 'Cơm Tấm',
